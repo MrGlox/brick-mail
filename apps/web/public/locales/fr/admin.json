@@ -1,0 +1,222 @@
+{
+  "signin": {
+    "title": "Sign In",
+    "description": "This is the admin signin page.",
+    "back": "Back to normal signin",
+    "action": "Connect"
+  },
+  "forgot": {
+    "title": "Forgot password",
+    "link": "Forgot password ?",
+    "description": "Enter your email address to start the account recovery process",
+    "confirm": "Confirm mail"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "description": "Connect with your Google account to provide access to your channel's comments, videos and playlists.",
+    "social": "Connect with your Google account to provide access to your channel's comments, videos and playlists.",
+    "action": "Sign up with Email"
+  },
+  "forgot_password": {
+    "title": "Forgot password",
+    "link": "Forgot password ?",
+    "description": "Connect with your Google account to provide access to your channel's comments, videos and playlists.",
+    "update": "Update password",
+    "social": "Connect with your Google account to provide access to your channel's comments, videos and playlists."
+  },
+  "change_password": {
+    "title": "Modifier le mot de passe",
+    "link": "Modifier le mot de passe ?",
+    "description": "Change your password to secure your account.",
+    "update": "Update password"
+  },
+  "email": {
+    "title": "Email verification in progress",
+    "description": "We've send you an email to verify your email address. Please check your inbox and click on the link provided to continue."
+  },
+  "register": "Register with Email",
+  "or_continue": "Or continue with",
+  "alerts": {
+    "access_denied": "You have cancelled the login process",
+    "stateMisMatch": "We are unable to verify the request. Please try again"
+  },
+  "fields": {
+    "email": "Email",
+    "email_placeholder": "name@example.com",
+    "password": "Password",
+    "password_confirm": "Confirm Password",
+    "password_new": "New password",
+    "name": "Name",
+    "pseudo": "Pseudo",
+    "phone": "Phone"
+  },
+  "status": {
+    "active": "Actif",
+    "inactive": "Inactif",
+    "deleted": "Supprimé",
+    "pending": "En attente",
+    "suspended": "Suspendu"
+  },
+  "agree": "By clicking continue, you agree to our",
+  "terms": "Terms of Service",
+  "and": "and",
+  "privacy": "Privacy Policy",
+  "user": {
+    "invite": {
+      "title": "Inviter un utilisateur",
+      "description": "Invitez un nouvel utilisateur à rejoindre votre équipe en lui envoyant une invitation par email. Attribuez un rôle pour définir son niveau d'accès.",
+      "fields": {
+        "email": {
+          "label": "Email",
+          "placeholder": "ex: john.doe@gmail.com"
+        },
+        "role": {
+          "label": "Rôle",
+          "placeholder": "Sélectionnez un rôle"
+        },
+        "description": {
+          "label": "Description (optionnel)",
+          "placeholder": "Ajoutez une note personnelle à votre invitation (optionnel)"
+        }
+      },
+      "actions": {
+        "cancel": "Annuler",
+        "submit": "Inviter"
+      },
+      "success": {
+        "message": "Utilisateur invité avec succès",
+        "description": "Un email d'invitation a été envoyé à l'utilisateur"
+      },
+      "error": {
+        "message": "Échec de l'invitation de l'utilisateur",
+        "description": "Une erreur s'est produite lors de l'invitation de l'utilisateur",
+        "existing_user": "Un utilisateur avec cet email existe déjà"
+      }
+    },
+    "action": {
+      "title": {
+        "edit": "Modifier l'utilisateur",
+        "create": "Ajouter un nouvel utilisateur"
+      },
+      "description": {
+        "edit": "Mettez à jour l'utilisateur ici. ",
+        "create": "Créez un nouvel utilisateur ici. ",
+        "save": "Cliquez sur enregistrer une fois terminé."
+      },
+      "fields": {
+        "firstName": {
+          "label": "Prénom",
+          "placeholder": "ex: John"
+        },
+        "lastName": {
+          "label": "Nom",
+          "placeholder": "ex: Doe"
+        },
+        "pseudo": {
+          "label": "Pseudo",
+          "placeholder": "ex: johndoe"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "ex: john.doe@example.com"
+        },
+        "phoneNumber": {
+          "label": "Numéro de téléphone",
+          "placeholder": "+123456789"
+        },
+        "role": {
+          "label": "Rôle",
+          "placeholder": "Sélectionnez un rôle"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "ex: S3cur3P@ssw0rd"
+        },
+        "confirmPassword": {
+          "label": "Confirmer le mot de passe",
+          "placeholder": "ex: S3cur3P@ssw0rd"
+        }
+      },
+      "actions": {
+        "save": "Enregistrer les modifications"
+      }
+    },
+    "create": {
+      "success": {
+        "message": "Utilisateur créé avec succès",
+        "description": "Le nouvel utilisateur a été créé et peut maintenant se connecter"
+      },
+      "error": {
+        "message": "Échec de la création de l'utilisateur",
+        "description": "Une erreur s'est produite lors de la création de l'utilisateur",
+        "existing_user": "Un utilisateur avec cet email existe déjà"
+      }
+    },
+    "edit": {
+      "success": {
+        "message": "Utilisateur modifié avec succès",
+        "description": "L'utilisateur a été mis à jour avec les nouvelles informations"
+      },
+      "error": {
+        "message": "Échec de la modification de l'utilisateur",
+        "description": "Une erreur s'est produite lors de la modification de l'utilisateur",
+        "existing_user": "Un utilisateur avec cet email existe déjà"
+      }
+    },
+    "validation": {
+      "password": {
+        "required": "Le mot de passe est requis",
+        "min_length": "Le mot de passe doit contenir au moins 8 caractères",
+        "lowercase": "Le mot de passe doit contenir au moins une lettre minuscule",
+        "number": "Le mot de passe doit contenir au moins un chiffre",
+        "match": "Les mots de passe ne correspondent pas"
+      },
+      "required": "Ce champ est requis",
+      "email": "Veuillez entrer une adresse email valide"
+    },
+    "table": {
+      "columns": {
+        "select": "Tout sélectionner",
+        "select_row": "Sélectionner la ligne",
+        "name": "Nom",
+        "email": "Email",
+        "status": "Statut",
+        "role": "Rôle",
+        "last_active": "Dernière activité",
+        "never": "Jamais"
+      },
+      "actions": {
+        "menu": {
+          "open": "Ouvrir le menu",
+          "edit": "Modifier",
+          "delete": "Supprimer"
+        }
+      }
+    },
+    "delete": {
+      "title": "Supprimer l'utilisateur",
+      "description": {
+        "confirm": "Êtes-vous sûr de vouloir supprimer",
+        "role": "Cette action supprimera définitivement l'utilisateur avec le rôle de",
+        "warning": "du système. Cette action est irréversible."
+      },
+      "fields": {
+        "username": {
+          "label": "Nom d'utilisateur :",
+          "placeholder": "Entrez le pseudo pour confirmer la suppression"
+        }
+      },
+      "alert": {
+        "title": "Attention !",
+        "description": "Cette opération ne peut pas être annulée"
+      },
+      "actions": {
+        "confirm": "Supprimer"
+      },
+      "success": {
+        "title": "L'utilisateur suivant a été supprimé :",
+        "description": "Suppression de l'utilisateur réussie"
+      }
+    }
+  }
+}

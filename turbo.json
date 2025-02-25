@@ -1,0 +1,72 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [".env"],
+  "tasks": {
+    "dev": {
+      "env": ["DATABASE_URL", "NODE_ENV", "PORT"],
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "env": ["DATABASE_URL", "NODE_ENV", "PORT"],
+      "cache": false,
+      "persistent": true,
+      "outputs": []
+    },
+    "build": {
+      "env": ["DATABASE_URL", "NODE_ENV"],
+      "outputs": [
+        "apps/server/dist/**",
+        "apps/web/build/**",
+        "dist/**",
+        "generated/**"
+      ]
+    },
+    "typecheck": {},
+    "email:dev": {
+      "env": ["DATABASE_URL", "NODE_ENV", "PORT"],
+      "outputs": ["apps/server/dist/**", "apps/web/build/**"],
+      "dependsOn": ["^dev"]
+    },
+    "db:generate": {
+      "env": ["DATABASE_URL"],
+      "outputs": ["generated/**"],
+      "cache": false
+    },
+    "db:migrate:dev": {
+      "env": ["DATABASE_URL"],
+      "cache": false
+    },
+    "db:migrate:deploy": {
+      "env": ["DATABASE_URL"],
+      "cache": false
+    },
+    "db:push": {
+      "env": ["DATABASE_URL"],
+      "cache": false
+    },
+    "db:seed": {
+      "env": ["DATABASE_URL", "ADMIN_EMAIL", "ADMIN_PASSWORD"],
+      "cache": false
+    },
+    "db:seed:admin": {
+      "env": ["DATABASE_URL", "ADMIN_EMAIL", "ADMIN_PASSWORD"],
+      "cache": false
+    },
+    "db:studio": {
+      "env": ["DATABASE_URL"],
+      "cache": false
+    },
+    "lint": {
+      "cache": false
+    }
+  },
+  "globalEnv": [
+    "DATABASE_URL",
+    "NODE_ENV",
+    "POSTGRES_USER",
+    "POSTGRES_PASSWORD",
+    "POSTGRES_DB",
+    "APP_PORT"
+  ]
+}

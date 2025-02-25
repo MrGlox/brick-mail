@@ -1,0 +1,60 @@
+{
+  "name": "nestjs-remix-monorepo",
+  "version": "1.0.0",
+  "description": "A monorepo with a NestJS backend and a Remix frontend",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "dotenv turbo dev",
+    "lint": "dotenv turbo lint",
+    "build": "dotenv turbo build",
+    "typecheck": "dotenv turbo typecheck",
+    "start": "dotenv turbo start",
+    "db:generate": "dotenv turbo db:generate",
+    "db:migrate:dev": "dotenv turbo db:migrate:dev",
+    "db:migrate:deploy": "dotenv turbo db:migrate:deploy",
+    "db:deploy": "dotenv turbo db:deploy",
+    "db:seed": "dotenv turbo db:seed",
+    "db:seed:admin": "dotenv turbo db:seed:admin",
+    "db:studio": "dotenv turbo db:studio",
+    "email:dev": "dotenv turbo email:dev",
+    "clear:modules": "rm -rf {node_modules,package-lock.json} **/{node_modules,package-lock.json}",
+    "clear:turbo": "rm -rf .turbo **/.turbo"
+  },
+  "keywords": [
+    "nestjs",
+    "remix",
+    "monorepo"
+  ],
+  "author": "MrGlox",
+  "license": "ISC",
+  "packageManager": "pnpm@9.12.0",
+  "pnpm": {
+    "overrides": {
+      "@swc/core": "^1.6.7"
+    }
+  },
+  "prisma": {
+    "schema": "packages/database/prisma/schema",
+    "seed": "tsx packages/database/prisma/seeder/index.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.3.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.3.1",
+    "tsx": "^4.19.2",
+    "turbo": "^2.4"
+  },
+  "resolutions": {
+    "wrap-ansi": "7.0.0",
+    "string-width": "4.1.0"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

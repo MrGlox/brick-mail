@@ -1,0 +1,51 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "main": "./generated/client/index.js",
+  "types": "./generated/client/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./generated/client/index.js",
+      "types": "./generated/client/index.d.ts"
+    }
+  },
+  "files": [
+    "generated"
+  ],
+  "scripts": {
+    "build": "rimraf dist generated && pnpm db:generate && tsc && tsc -p tsconfig.seeder.json",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seeder/index.ts",
+    "db:seed:admin": "tsx prisma/seeder/admin.seed.ts",
+    "db:studio": "prisma studio",
+    "format": "prisma format",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "dotenv-cli": "^7.4.1",
+    "prisma": "^6.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0"
+  },
+  "prisma": {
+    "schema": "prisma/schema",
+    "seed": "tsx prisma/seeder/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./generated/client/index.d.ts"
+      ]
+    }
+  }
+}

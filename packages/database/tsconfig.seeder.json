@@ -1,0 +1,23 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "./prisma",
+        "outDir": "./dist/prisma",
+        "composite": true,
+        "declaration": true,
+        "paths": {
+            "@repo/database": [
+                "./generated/client/index"
+            ]
+        }
+    },
+    "include": [
+        "prisma/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "src",
+        "dist",
+        "generated"
+    ]
+}

@@ -1,0 +1,222 @@
+{
+  "signin": {
+    "title": "Sign In",
+    "description": "This is the admin signin page.",
+    "back": "Back to normal signin",
+    "action": "Connect"
+  },
+  "forgot": {
+    "title": "Forgot password",
+    "link": "Forgot password ?",
+    "description": "Enter your email address to start the account recovery process",
+    "confirm": "Confirm mail"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "description": "Connect with your Google account to provide access to your channel's comments, videos and playlists.",
+    "social": "Connect with your Google account to provide access to your channel's comments, videos and playlists.",
+    "action": "Sign up with Email"
+  },
+  "forgot_password": {
+    "title": "Forgot password",
+    "link": "Forgot password ?",
+    "description": "Connect with your Google account to provide access to your channel's comments, videos and playlists.",
+    "update": "Update password",
+    "social": "Connect with your Google account to provide access to your channel's comments, videos and playlists."
+  },
+  "change_password": {
+    "title": "Modifier le mot de passe",
+    "link": "Modifier le mot de passe ?",
+    "description": "Change your password to secure your account.",
+    "update": "Update password"
+  },
+  "email": {
+    "title": "Email verification in progress",
+    "description": "We've send you an email to verify your email address. Please check your inbox and click on the link provided to continue."
+  },
+  "register": "Register with Email",
+  "or_continue": "Or continue with",
+  "alerts": {
+    "access_denied": "You have cancelled the login process",
+    "stateMisMatch": "We are unable to verify the request. Please try again"
+  },
+  "fields": {
+    "email": "Email",
+    "email_placeholder": "name@example.com",
+    "password": "Password",
+    "password_confirm": "Confirm Password",
+    "password_new": "New password",
+    "name": "Name",
+    "pseudo": "Pseudo",
+    "phone": "Phone"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "deleted": "Deleted",
+    "pending": "Pending",
+    "suspended": "Suspended"
+  },
+  "agree": "By clicking continue, you agree to our",
+  "terms": "Terms of Service",
+  "and": "and",
+  "privacy": "Privacy Policy",
+  "user": {
+    "invite": {
+      "title": "Invite User",
+      "description": "Invite new user to join your team by sending them an email invitation. Assign a role to define their access level.",
+      "fields": {
+        "email": {
+          "label": "Email",
+          "placeholder": "eg: john.doe@gmail.com"
+        },
+        "role": {
+          "label": "Role",
+          "placeholder": "Select a role"
+        },
+        "description": {
+          "label": "Description (optional)",
+          "placeholder": "Add a personal note to your invitation (optional)"
+        }
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "submit": "Invite"
+      },
+      "success": {
+        "message": "User invited successfully",
+        "description": "An invitation email has been sent to the user"
+      },
+      "error": {
+        "message": "Failed to invite user",
+        "description": "An error occurred while inviting the user",
+        "existing_user": "A user with this email already exists"
+      }
+    },
+    "action": {
+      "title": {
+        "edit": "Edit User",
+        "create": "Add New User"
+      },
+      "description": {
+        "edit": "Update the user here. ",
+        "create": "Create new user here. ",
+        "save": "Click save when you're done."
+      },
+      "fields": {
+        "firstName": {
+          "label": "First Name",
+          "placeholder": "e.g., John"
+        },
+        "lastName": {
+          "label": "Last Name",
+          "placeholder": "e.g., Doe"
+        },
+        "pseudo": {
+          "label": "Pseudo",
+          "placeholder": "e.g., johndoe"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "e.g., john.doe@example.com"
+        },
+        "phoneNumber": {
+          "label": "Phone Number",
+          "placeholder": "+123456789"
+        },
+        "role": {
+          "label": "Role",
+          "placeholder": "Select a role"
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "e.g., S3cur3P@ssw0rd"
+        },
+        "confirmPassword": {
+          "label": "Confirm Password",
+          "placeholder": "e.g., S3cur3P@ssw0rd"
+        }
+      },
+      "actions": {
+        "save": "Save changes"
+      }
+    },
+    "create": {
+      "success": {
+        "message": "User created successfully",
+        "description": "The new user has been created and can now log in"
+      },
+      "error": {
+        "message": "Failed to create user",
+        "description": "An error occurred while creating the user",
+        "existing_user": "A user with this email already exists"
+      }
+    },
+    "edit": {
+      "success": {
+        "message": "User edited successfully",
+        "description": "The user has been updated with the new information"
+      },
+      "error": {
+        "message": "Failed to edit user",
+        "description": "An error occurred while editing the user",
+        "existing_user": "A user with this email already exists"
+      }
+    },
+    "validation": {
+      "password": {
+        "required": "Password is required",
+        "min_length": "Password must be at least 8 characters long",
+        "lowercase": "Password must contain at least one lowercase letter",
+        "number": "Password must contain at least one number",
+        "match": "Passwords don't match"
+      },
+      "required": "This field is required",
+      "email": "Please enter a valid email address"
+    },
+    "table": {
+      "columns": {
+        "select": "Select all",
+        "select_row": "Select row",
+        "name": "Name",
+        "email": "Email",
+        "status": "Status",
+        "role": "Role",
+        "last_active": "Last Active",
+        "never": "Never"
+      },
+      "actions": {
+        "menu": {
+          "open": "Open menu",
+          "edit": "Edit",
+          "delete": "Delete"
+        }
+      }
+    },
+    "delete": {
+      "title": "Delete User",
+      "description": {
+        "confirm": "Are you sure you want to delete",
+        "role": "This action will permanently remove the user with the role of",
+        "warning": "from the system. This cannot be undone."
+      },
+      "fields": {
+        "username": {
+          "label": "Username:",
+          "placeholder": "Enter pseudo to confirm deletion"
+        }
+      },
+      "alert": {
+        "title": "Warning!",
+        "description": "Please be careful, this operation cannot be rolled back"
+      },
+      "actions": {
+        "confirm": "Delete"
+      },
+      "success": {
+        "title": "The following user has been deleted:",
+        "description": "User deletion successful"
+      }
+    }
+  }
+}

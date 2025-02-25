@@ -1,0 +1,41 @@
+services:
+
+  db:
+    image: postgres:16-alpine3.19
+    container_name: brick-mail-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  maildev:
+    build:
+      context: .
+      dockerfile: config/maildev.Dockerfile
+    ports:
+      - ${MAIL_CLIENT_PORT}:1080
+      - ${MAIL_PORT}:1025
+
+  redis:
+    image: redis:latest
+    container_name: brick-mail-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    command: [ "redis-server" ]
+    # --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+    volumes:
+      - ./cache:/data
+      - /dev/volumes/nestjs-remix/dev/sessions/:/data
+
+volumes:
+  postgres_data:

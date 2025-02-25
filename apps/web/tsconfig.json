@@ -1,0 +1,60 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "include": [
+    "env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "../playwright.config.ts",
+    ".react-router/types/**/*",
+    "../../server/core/remix/remix.service.ts",
+    "../../server/core/prisma/prisma.service.ts",
+    "tailwind.config.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/types/**/*.d.ts"
+  ],
+  "exclude": [
+    "index.d.cts"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2019"
+    ],
+    "types": [
+      "vite/client",
+      "react-router"
+    ],
+    "rootDirs": [
+      ".",
+      "./.react-router/types"
+    ],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": false,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "target": "ES2019",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./app/*"
+      ],
+      "~/locales/*": [
+        "./locales/*"
+      ]
+    },
+    "noEmit": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./app/types"
+    ]
+  }
+}

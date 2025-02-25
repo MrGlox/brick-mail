@@ -1,0 +1,7 @@
+{
+  "subject": "You've been invited to join the platform",
+  "title": "You've been invited!",
+  "description": "You've been invited to join our platform. Click the button below to set up your account.",
+  "message": "{{desc}}",
+  "cta": "Accept invitation"
+}

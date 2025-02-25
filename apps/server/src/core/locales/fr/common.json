@@ -1,0 +1,9 @@
+{
+  "welcome": "Bienvenue",
+  "error": {
+    "not_found": "Non trouvé",
+    "unauthorized": "Non autorisé",
+    "forbidden": "Interdit",
+    "internal_server_error": "Erreur interne du serveur"
+  }
+} 

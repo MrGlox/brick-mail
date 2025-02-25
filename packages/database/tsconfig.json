@@ -1,0 +1,40 @@
+{
+    "extends": "@repo/typescript-config/base.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "commonjs",
+        "target": "es2019",
+        "lib": [
+            "es2019",
+            "esnext.asynciterable"
+        ],
+        "declaration": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "skipLibCheck": true,
+        "composite": true,
+        "paths": {
+            "@repo/database": [
+                "./generated/client/index"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "generated",
+        "prisma"
+    ]
+}
